@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アイ - AIチャットボット</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>アイとおしゃべり</h1>
+            <p>何でも気軽に話しかけてね！</p>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-icon">👧</div>
+                <div class="message-content">
+                    <p>こんにちは！わたし、アイです。今日はどんなお話をしましょうか？</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input-container">
+            <div class="input-wrapper">
+                <input type="text" id="messageInput" placeholder="メッセージを入力してください..." maxlength="500">
+                <button id="sendButton">送信</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
