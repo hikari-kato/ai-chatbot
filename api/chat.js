@@ -1,6 +1,6 @@
-const { GoogleGenerativeAI } = require('@google/generative-ai');
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
-async function handler(req, res) {
+export default async function handler(req, res) {
     if (req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
     }
@@ -70,5 +70,3 @@ async function handler(req, res) {
         return res.status(500).json({ error: 'サーバーエラーが発生しました' });
     }
 }
-
-module.exports = { default: handler };
